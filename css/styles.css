@@ -46,7 +46,7 @@ img.dibley {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 15px;
 }
@@ -57,7 +57,7 @@ img.dibley {
 }
 
 .box1 {
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
   background-color: #f9cb9c;
 }
 
@@ -68,7 +68,7 @@ img.dibley {
 }
 
 .box3 {
-  grid-column: 2 / 5;
+  grid-column: 2 / 4;
   background-color: #e3f2fd;
 }
 
@@ -78,12 +78,12 @@ img.dibley {
 }
 
 .box5 {
-  grid-column: 3 / 5;
+  grid-column: 3 / 4;
   background-color: #d9ead3;
   color: white;
 }
 
 .box6 {
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
   background-color: #f4cccc;
 }
