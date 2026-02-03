@@ -43,3 +43,47 @@ margin-right: 10px;
 img.dibley {
     max-width: 100%
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+}
+.wrapper div {
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.box1 {
+  grid-column: 1 / 4;
+  background-color: #f9cb9c;
+}
+
+.box2 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;   
+  background-color: #b6d7a8;
+}
+
+.box3 {
+  grid-column: 2 / 4;
+  background-color: #e3f2fd;
+}
+
+.box4 {
+  grid-column: 2 / 3;
+  background-color: #cfe2f3;
+}
+
+.box5 {
+  grid-column: 3 / 4;
+  background-color: #d9ead3;
+  color: white;
+}
+
+.box6 {
+  grid-column: 1 / 4;
+  background-color: #f4cccc;
+}
