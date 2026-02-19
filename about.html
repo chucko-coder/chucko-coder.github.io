@@ -50,16 +50,25 @@
     <script>
         const user = {
             name: 'Charles Olden',
-            imageUrl: '',
+            imageUrl: 'images/AboutImage.png',
             bio: 'I am a student pursuing a degree in software development. Outside of class, I am also building a personal site using Ruby on Rails, which has given me a great perspective on how client-side and server-side technologies work together. When I am not juggling my day job in logistics or grinding through coursework, I like to unwind with Virtual Reality gaming or dive into a good sci-fi story, especially anything involving space travel. There is something about the vastness of space that mirrors how I feel about software development: the deeper you go, the more there is to explore.'
         };
 
-        // Step one - Create a React element
-
-        // Step 2: Render the React element
-
+        const h1Element = React.createElement('h1', null, user.name);
+        
+        const imgElement = React.createElement('img', {
+            src: user.imageUrl,
+            alt: user.name,
+            width: '200',
+            height: '200'
+        });
+    
+        const pElement = React.createElement('p', null, user.bio);
+    
+        ReactDOM.render(h1Element, document.getElementById('h1'));
+        ReactDOM.render(imgElement, document.getElementById('img'));
+        ReactDOM.render(pElement, document.getElementById('content'));
     </script>
-
 </main><!-- /.container -->
 
 <!-- Bootstrap core JavaScript
